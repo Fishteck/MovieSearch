@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <title>MovieSearch</title>
+  <style>
+    .card:hover {
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+      transition: ease 0.4s;
+    }
+    #movies {
+      display: flex;
+      justify-content: center;
+      align-items: top;
+    }
+    #movies a {
+        color:#17a2b8
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark justify-content-around mb-5">
+    <div class="container">
+    <a href="./" class="navbar-brand ">Kinopoisk</a>
+    <form id="search-form" class="form-inline">
+      <input type="search" class="form-control mr-3" id='serchText' placeholder="Название фильма ">
+      <button class="btn btn-outline-success my-2 my-sm-0 animated infinite pulse slower" type="submit"
+        id="btn">Найти</button>
+    </form>
+    <div class="text-center text-white">Поиск фильмов</div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="movies" class="row"></div>
+  </div>
+  <script src="reworkScript.js"></script>
+</body>
+
+</html>
